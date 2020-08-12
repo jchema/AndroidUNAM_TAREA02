@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15sp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="@dimen/padding"
+    tools:context=".MainActivity">
+
+    <!-- Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombre_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/hint_name"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Headline"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:drawableStart="@drawable/ic_contacts"
+            android:drawableLeft="@drawable/ic_contacts"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Date -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fechaNac_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/hint_fechaNac"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Headline"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_fechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:clickable="true"
+            android:focusable="false"
+            android:maxLines="1"
+            android:onClick="onClickFecha"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawableLeft="@drawable/ic_calendar"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Telefono -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hint_telefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/hint_telefono"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Headline">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawableLeft="@drawable/ic_phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hint_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/hint_email"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Headline">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:drawableStart="@drawable/ic_email"
+            android:drawableLeft="@drawable/ic_email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Descripcion del Contacto -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hint_detContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/hint_detContacto"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Headline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_detalleContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="3"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:drawableStart="@drawable/ic_comment"
+            android:drawableLeft="@drawable/ic_comment" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Boton de siguiente -->
+
+    <Button
+        android:id="@+id/btn_button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_button01"
+        android:gravity="center_horizontal"
+        style="colorButtonNormal"
+        android:textSize="@dimen/buttom_size"
+        android:onClick="onClick_BTN"
+        android:enabled="true" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

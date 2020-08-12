@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tarea-02 - José Delgado</string>
+    <string name="presentacion">Lista de Contactos</string>
+    <string name="nombreCompleto">nombreCompleto</string>
+    <string name="fechaNacimiento">fechaNacimiento</string>
+    <string name="telefono">telefono</string>
+    <string name="email">email</string>
+    <string name="detalleContacto">detalleContacto</string>
+    <string name="btn_button01">Siguiente</string>
+    <string name="btn_button02">Editar Datos</string>
+
+    <string name="hint_name">Nombre Completo</string>
+    <string name="hint_fechaNac">Fecha de Nacimiento</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_detContacto">Detalle del Contacto</string>
+
+    <string name="p_nombre">p_nombre</string>
+    <string name="p_fechaNac">p_fechaNac</string>
+    <string name="p_telefono">p_telefono</string>
+    <string name="p_email">p_email</string>
+    <string name="p_detaCont">p_detaCont</string>
+
+    <string name="Toast_msg">Edicción</string>
+
+
+</resources>

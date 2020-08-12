@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15sp"
+    android:layout_gravity="center"
+    android:padding="@dimen/padding"
+    tools:context=".EditData"  >
+    <!-- nombre -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ig_nombre"
+            android:contentDescription="@string/hint_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop ="@dimen/margin_top"
+            android:src="@drawable/ic_contacts"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginEnd="@dimen/margin_right"  />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop ="@dimen/margin_top"
+            android:text="@string/hint_name"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"   />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- fecha de nacimiento -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ig_fecnac"
+            android:contentDescription="@string/hint_fechaNac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop ="@dimen/margin_top"
+            android:src="@drawable/ic_calendar"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginEnd="@dimen/margin_right"  />
+
+        <TextView
+            android:id="@+id/tv_fechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_fechaNac"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_top" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Telefono -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ig_telefono"
+            android:contentDescription="@string/hint_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop ="@dimen/margin_top"
+            android:src="@drawable/ic_phone"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginEnd="@dimen/margin_right"  />
+
+        <TextView
+            android:id="@+id/tv_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_telefono"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_top" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- email-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ig_email"
+            android:contentDescription="@string/hint_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop ="@dimen/margin_top"
+            android:src="@drawable/ic_email"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginEnd="@dimen/margin_right"  />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_email"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_top" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- detalle del contacto -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ig_detContac"
+            android:contentDescription="@string/hint_detContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop ="@dimen/margin_top"
+            android:src="@drawable/ic_comment"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginEnd="@dimen/margin_right"  />
+
+        <TextView
+            android:id="@+id/tv_detaContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_detContacto"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_top" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/btn_button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_button02"
+        android:gravity="center_horizontal"
+        style="colorButtonNormal"
+        android:textSize="@dimen/buttom_size"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textCursorDrawable="@drawable/ic_phone"
+        android:enabled="true"
+        android:onClick="onClick_Btn_Regresar" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

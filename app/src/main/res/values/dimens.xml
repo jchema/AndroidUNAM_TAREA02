@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="margin_bottom">15sp</dimen>
+    <dimen name="margin_right">15sp</dimen>
+    <dimen name="buttom_size">19sp</dimen>
+    <dimen name="margin_top">15sp</dimen>
+    <dimen name="margin_left">10sp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="padding">15sp</dimen>
+</resources>
